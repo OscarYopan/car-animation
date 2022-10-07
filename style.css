@@ -25,14 +25,14 @@ body{
 }
 
 .world {
-  background-color: var(--color3);
+  background-image: linear-gradient(180deg, #027353, #07231b, #027353);
   height: 1000px;
   width: 1000px;
   border: none;
   border-radius: 50%;
   position: absolute;
   bottom: -700px;
-  animation: turn 10s ease infinite;
+  animation: turn 10s linear infinite;
 }
 
 @keyframes turn {
@@ -59,12 +59,24 @@ body{
 .wheel {
   height: 60px;
   width: 60px;
-  background-color: #333333;
+  background-image: linear-gradient(180deg, #000, #616161, #000);
   border-radius: 50%;
   border: 6px solid var(--color5);
   position: absolute;
   top: 47%;
   left: 51.5%;
+  animation: roll 1s linear infinite;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+  
 }
 
 .back-wheel {
@@ -83,23 +95,32 @@ body{
   border-radius: 40% 40% 0 0;
 }
 
-.tree-one-stalk {
+.cloud {
+  width: 200px;
   height: 200px;
-  width: 50px;
-  background-color: #8e6729;
+  fill: var(--color4);
   position: absolute;
-  left: 50%;
-  top: -150px;
-  z-index: -10;
+  top: 80px;
+  right: -150px;
+  z-index: -2;
+  animation: movimentation 5s linear infinite;
 }
 
-.tree-top {
+@keyframes movimentation {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-2000px);
+  }
+}
+
+.tree-one {
+  width: 200px;
   height: 200px;
-  width: 100px;
-  background-color: greenyellow;
+  fill: var(--color3);
   position: absolute;
-  top: -290px;
-  left: 47.5%;
-  border-radius: 50% 50% 15% 15%;
-  z-index: -10;
+  top: -40px;
+  transform: rotate(-45deg);
 }
