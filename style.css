@@ -124,3 +124,12 @@ body{
   top: -40px;
   transform: rotate(-45deg);
 }
+
+.city {
+  width: 300px;
+  height: 300px;
+  fill: var(--color1);
+  position: absolute;
+  bottom: -140px;
+  transform: rotate(215deg);
+}
