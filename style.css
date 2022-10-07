@@ -43,7 +43,7 @@ body{
   100% {
     transform: rotate(-360deg);
   }
-  
+
 }
 
 .car-body {
@@ -76,7 +76,7 @@ body{
   100% {
     transform: rotate(360deg);
   }
-  
+
 }
 
 .back-wheel {
@@ -142,4 +142,24 @@ body{
   top: 10px;
   right: 15px;
   transform: rotate(45deg);
+}
+
+.tree-two {
+  width: 200px;
+  height: 200px;
+  fill: rgb(96, 221, 96);
+  position: absolute;
+  bottom: -40px;
+  right: 15px;
+  transform: rotate(135deg);
+}
+
+.meteor {
+  width: 80px;
+  height: 80px;
+  fill: firebrick;
+  position: absolute;
+  top: 80px;
+  left: 350px;
+  z-index: -1;
 }
