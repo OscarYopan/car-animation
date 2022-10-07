@@ -102,7 +102,7 @@ body{
   position: absolute;
   top: 80px;
   right: -150px;
-  z-index: -2;
+  z-index: -1;
   animation: movimentation 5s linear infinite;
 }
 
@@ -132,4 +132,14 @@ body{
   position: absolute;
   bottom: -140px;
   transform: rotate(215deg);
+}
+
+.cow {
+  width: 200px;
+  height: 200px;
+  fill: #616161;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  transform: rotate(45deg);
 }
